@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.use("/", require("./site/router"));
-app.use("/messages", require("./chat-api/messages"));
+app.use("/messages", require("./api/router"));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
